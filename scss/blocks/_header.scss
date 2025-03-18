@@ -1,0 +1,46 @@
+.header {
+    border-bottom: 1px solid $color-grey-goose;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo-img{
+        width: 110px;
+        height: 50px;
+    }
+    &__mainNav-burger {
+        display: none;
+        @include vp-1023 {
+            display: block;
+        }
+    }
+    &__mainNav-list{
+        list-style-type: none;
+        display: flex;
+        gap:50px;
+        @include vp-1023{
+            display: none;
+        }
+    }
+    &__mainNav-item {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &__mainNav-link{
+        text-decoration: none;
+    }
+    &__usersList{
+        display: flex;
+        gap: 20px;
+    }
+    &__usersList-item:last-child{
+        @include vp-1023{
+            display: none;
+        }
+    }
+}

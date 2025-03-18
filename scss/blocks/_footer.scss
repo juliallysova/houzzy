@@ -1,0 +1,107 @@
+.footer{
+    border-top: 1px solid $color-grey-goose;
+.socials{
+    &__content{
+        margin-top: 60px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 8px;
+    }
+    &__buyers-header{
+        font-size: 24px;
+        @include vp-1023{
+            font-size: 18px;
+        }
+    }
+    &__buyers-list{
+        list-style-type: none;
+        margin:0px;
+        padding: 0px;
+        column-count: 2;
+        column-gap: 25px;
+        @include vp-1023{
+            column-count: 1;
+        }
+    }
+    &__buyers-listItem{
+        margin-bottom: 15px;
+    }
+    &__about-header{
+        font-size: 24px;
+        @include vp-1023{
+            font-size: 18px;
+        }
+    }
+    &__about-list {
+        list-style-type: none;
+        margin:0px;
+        padding: 0px;
+        column-count: 2;
+        column-gap: 25px;
+        @include vp-1023{
+            column-count: 1;
+        }
+    }
+    &__about-listItem{
+        margin-bottom: 15px;
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 14px;
+        @include vp-1023{
+            display: flex;
+            align-items: flex-end;
+            
+        }
+        @include vp-767{
+            align-items: flex-start;
+        }
+    }
+    &__contact-header{
+        font-size: 24px;
+        line-height: 24px;
+        @include vp-1023{
+            font-size: 18px;
+        }
+    }
+    &__contact-items{
+        display: flex;
+        gap: 15px;
+    }
+    &__copyright{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        grid-column: span 3/span 3;
+        color:$color-bokara-grey-40;
+        margin-top: 60px;
+        @include vp-1023 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2px;
+
+        }
+    }
+    &__copyright::before{
+        position: absolute;
+        content: '';
+        background-color: $color-grey-goose;
+        width: 100%;
+        height: 1px;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+    }
+    &__copyright-item{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+}

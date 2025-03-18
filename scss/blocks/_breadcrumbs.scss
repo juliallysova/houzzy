@@ -1,0 +1,19 @@
+.breadcrumbs{
+    margin-top: 20px;
+    &__list{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &-item::after{
+            content:"/";
+                font-size: 12px;
+                line-height: 16px;
+        }
+        &-item:last-child{
+            color: $color-martini;
+        }
+        &-item:last-child::after {
+                content:none;
+        }
+    }
+}
